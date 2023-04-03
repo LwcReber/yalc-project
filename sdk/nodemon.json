@@ -1,0 +1,13 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "./lib/*",
+    "./package.json",
+    "./README.md",
+    "./package-lock.json",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "ext": "ts json ejs"
+} 

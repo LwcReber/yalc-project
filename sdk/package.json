@@ -1,0 +1,50 @@
+{
+  "name": "web-sdk-yalc",
+  "version": "0.0.25",
+  "description": "test sdk",
+  "main": "./index",
+  "types": "./types/index",
+  "scripts": {
+    "local": "nodemon --debug  -x 'npm run yalc && yalc push'",
+    "yalc": "webpack --mode production  --config webpack.config.yalc.js",
+    "build:test": "webpack --mode production  --config webpack.config.test.js",
+    "build:uat": "webpack --mode production --config webpack.config.uat.js",
+    "build": "webpack --mode production",
+    "pub": "npm publish ./lib"
+  },
+  "keywords": [],
+  "eslintConfig": {
+    "extends": [
+      "prettier"
+    ]
+  },
+  "author": "Reber",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-umd": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "esbuild-loader": "^3.0.1",
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "ignore-loader": "^0.1.2",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "ts-loader": "9.3.0",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "typescript": "4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -9,4 +9,5 @@ yalc 成型解决方案，一个项目写sdk代码，一个项目写sdk的demo
 
 目录说明
 sdk: sdk项目文件夹，可以为单独的git项目
+
 demo: 写sdk demo的项目，可以为单独的git项目
