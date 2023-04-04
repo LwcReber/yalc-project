@@ -5,8 +5,6 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 const TsconfgPathsPlugin = require('tsconfig-paths-webpack-plugin')
 const TerserPlugin = require("terser-webpack-plugin")
 
-process.env.SDK_VERSION = require('./package.json').version
-
 const base = {
   entry: './src/index.ts',
   output: {
@@ -22,7 +20,11 @@ const base = {
   plugins: [
     new webpack.DefinePlugin({
       // 如果需要web环境也能访问，必须用这个插件注入
-      'process.env': JSON.stringify(process.env)
+      // 在runtime后根据 package.json 文件修改env的version
+      'process.env': webpack.DefinePlugin.runtimeValue(() => {
+        process.env.SDK_VERSION = require('./package.json').version
+        return JSON.stringify(process.env)
+      })
     }),
     new NodePolyfillPlugin(),
     new CleanWebpackPlugin()

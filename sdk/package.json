@@ -1,9 +1,9 @@
 {
   "name": "web-sdk-yalc",
-  "version": "0.0.25",
+  "version": "0.0.1",
   "description": "test sdk",
-  "main": "./index",
-  "types": "./types/index",
+  "main": "./lib/index",
+  "types": "./lib/types/index",
   "scripts": {
     "local": "nodemon --debug  -x 'npm run yalc && yalc push'",
     "yalc": "webpack --mode production  --config webpack.config.yalc.js",

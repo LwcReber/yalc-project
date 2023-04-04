@@ -10,7 +10,7 @@ class ChangePkgPlugin {
   }
 
   apply(compiler) {
-    compiler.hooks.afterPlugins.tap(PluginName, () => {
+    compiler.hooks.environment.tap(PluginName, () => {
       console.log(`The ${PluginName} build process is starting!`)
       const { name, main, types, version } = this.params
       const pkgPath = path.join(__dirname, './package.json')

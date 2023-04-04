@@ -9,5 +9,5 @@
     "node_modules/**/node_modules"
   ],
   "verbose": true,
-  "ext": "ts json ejs"
+  "ext": "ts js json ejs"
 } 

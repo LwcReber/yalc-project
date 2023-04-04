@@ -3,9 +3,9 @@
 const envConfig = {
   local: {
     PkgName: 'web-sdk-yalc',
-    PkgMain: './index',
-    PkgTypes: './types/index',
-    PkgVersion: '0.0.25'
+    PkgMain: './lib/index',
+    PkgTypes: './lib/types/index',
+    PkgVersion: '0.0.1'
   },
   test: {
     PkgName: 'web-sdk-test',

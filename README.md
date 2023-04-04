@@ -11,3 +11,5 @@ yalc 成型解决方案，一个项目写sdk代码，一个项目写sdk的demo
 sdk: sdk项目文件夹，可以为单独的git项目
 
 demo: 写sdk demo的项目，可以为单独的git项目
+
+sdk项目内需要添加 npmignore, 与gitignore不同，npmigonre没有忽略`/lib`文件夹，在yalc打包后才能包含lib的包，在demo项目里面才能使用这个yalc的包
