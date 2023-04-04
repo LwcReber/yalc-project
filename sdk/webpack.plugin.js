@@ -17,7 +17,7 @@ class ChangePkgPlugin {
       let pkg = fs.readFileSync(pkgPath)
       pkg = JSON.parse(pkg)
       pkg.main = main || '/index'
-      pkg.types = types || '/lib/index'
+      pkg.types = types || '/types/index'
       pkg.name = name || 'xx-sdk'
       pkg.version = version || '0.1.0'
       fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2))
