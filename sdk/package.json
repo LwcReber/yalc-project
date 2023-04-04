@@ -10,7 +10,8 @@
     "build:test": "webpack --mode production  --config webpack.config.test.js",
     "build:uat": "webpack --mode production --config webpack.config.uat.js",
     "build": "webpack --mode production",
-    "pub": "npm publish ./lib"
+    "check": "npm pack",
+    "pub": "npm publish"
   },
   "keywords": [],
   "eslintConfig": {
