@@ -1,6 +1,6 @@
 # sdk
 
-1. `npm i install`
+1. `npm i`
 2. 本地运行`npm run local`, 会生成yalc包，需要全局安装yalc, 在demo项目上引入yalc包 `npm run add`, 并且需要在vite.config.ts 配置包名 
 ```
   optimizeDeps: {
