@@ -9,20 +9,20 @@ const envConfig = {
   },
   test: {
     PkgName: 'web-sdk-test',
-    PkgMain: './index',
-    PkgTypes: './types/index',
+    PkgMain: './lib/index',
+    PkgTypes: './lib/types/index',
     PkgVersion: '0.0.24'
   },
   uat: {
     PkgName: 'web-sdk-uat',
-    PkgMain: './index',
-    PkgTypes: './types/index',
+    PkgMain: './lib/index',
+    PkgTypes: './lib/types/index',
     PkgVersion: '0.1.0'
   },
   prod: {
     PkgName: 'web-sdk',
-    PkgMain: './index',
-    PkgTypes: './types/index',
+    PkgMain: './lib/index',
+    PkgTypes: './lib/types/index',
     PkgVersion: '0.1.0'
   }
 }

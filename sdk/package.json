@@ -18,6 +18,9 @@
       "prettier"
     ]
   },
+  "files": [
+    "lib"
+  ],
   "author": "Reber",
   "license": "ISC",
   "devDependencies": {
@@ -26,7 +29,6 @@
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
     "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^11.0.0",
     "esbuild-loader": "^3.0.1",
     "eslint": "^8.18.0",
     "eslint-config-standard": "^17.0.0",
